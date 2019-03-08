@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.3"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
-        minSdkVersion 23
-        targetSdkVersion 26
+        minSdkVersion 24
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
@@ -22,6 +22,6 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':ReactAndroid')
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':ReactAndroid')
 }
