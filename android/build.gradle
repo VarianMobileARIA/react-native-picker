@@ -23,5 +23,5 @@ android {
 
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
-    api project(':ReactAndroid')
+    api "com.facebook.react:react-native:+"
 }
